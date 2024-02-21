@@ -8,3 +8,5 @@ npm init @eslint/config
 
 # sucrase e nodemon
 sucrase - import/export do ES6 - npm i nodemon sucrase --save-dev
+
+# Nao vamos ter views (html, css)
