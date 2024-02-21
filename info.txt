@@ -1,0 +1,10 @@
+MUITA COISA ANTES QUE NAO FIZ DE DOCKER E TAl
+
+# INICIAE
+npm i -y
+
+# Configurar linter - para regras e formatao de codigo
+npm init @eslint/config
+
+# sucrase e nodemon
+sucrase - import/export do ES6 - npm i nodemon sucrase --save-dev
