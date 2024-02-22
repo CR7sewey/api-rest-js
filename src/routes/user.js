@@ -4,6 +4,10 @@ import userController from '../controllers/UserController';
 const router = new Router();
 
 // ROTAS DA user - quem controla as rotas
+router.get('/', userController.index);
+router.get('/:id', userController.show);
+router.put('/:id', userController.update);
+router.delete('/:id', userController.delete);
 router.post('/', userController.store);
 
 export default router;
