@@ -1,0 +1,24 @@
+version: '3.9'
+services:
+  mysql_escola:  # container
+    env_file:
+      - .env
+    container_name: mysql_escola  # container name
+    hostname: mysql_escola
+    image: mysql:8
+    restart: always  # que volte sempre que se reinicia
+    command:  # comandos para dentro do my sql
+      - --authentication-policy=mysql_native_password
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --innodb_force_recovery=0
+    volumes:  # dados salvos dentro desta pasta do sql, mapear a pasta dentro do container para sistema fora dele!
+      - ./mysql_escola:/var/lib/mysql
+    ports:    # mapear para dentro do container para a porta do my sql
+      - 3306:3306 # porta padrao mySql
+    environment: # variaveis de ambiente!
+     # MYSQL_ROOT_PASSWORD: senha
+     # MYSQL_DATABASE: base_de_dados
+      #MYSQL_USER: usuario
+      #MYSQL_PASSWORD: senha
+      TZ: America/Sao_Paulo # timezone
