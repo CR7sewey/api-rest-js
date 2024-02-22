@@ -26,3 +26,8 @@ npx sequelize db:migrate:undo (para desfazer)
 # vamos usar tokens em vez de sessoes para logar
 # o cliente tem uma chave, manda para nos e conferimos se bate com a nossa!
 assim que o user digitar user e senha nos geramos um token para ele mandar o token sempre que quiser aceder a cenas que precisem de login
+
+# Seeds
+para criar cenas
+npx sequelize seed:generate --name criar-users
+para correr: npx sequelize db:seed:all
