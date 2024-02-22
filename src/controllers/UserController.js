@@ -16,6 +16,7 @@ class UserController {
   async index(req, res, next) {
     try {
       const novoUser = await User.findAll();
+      console.log('userID', req.userID);
       return res.json(novoUser);
     } catch (e) {
       // errors é array podemos entaom usar o map

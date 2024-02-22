@@ -1,10 +1,11 @@
 import { Router } from 'express';
 import userController from '../controllers/UserController';
+import loginRequired from '../middlewares/loginRequired';
 
 const router = new Router();
 
 // ROTAS DA user - quem controla as rotas
-router.get('/', userController.index);
+router.get('/', loginRequired, userController.index);
 router.get('/:id', userController.show);
 router.put('/:id', userController.update);
 router.delete('/:id', userController.delete);
