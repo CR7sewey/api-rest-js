@@ -17,3 +17,9 @@ npm i -D sequelize-cli
 npx sequelize migration:create --name=alunos (databse)
 alterar essas migrations e dps
 npx sequelize db:migrate
+
+# criar tabela usuarios
+npx sequelize migration:create --name=users (databse)
+npx sequelize db:migrate
+npx sequelize db:migrate:undo (para desfazer)
+
