@@ -23,3 +23,5 @@ npx sequelize migration:create --name=users (databse)
 npx sequelize db:migrate
 npx sequelize db:migrate:undo (para desfazer)
 
+# vamos usar tokens em vez de sessoes para logar
+# o cliente tem uma chave, manda para nos e conferimos se bate com a nossa!
