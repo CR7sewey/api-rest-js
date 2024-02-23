@@ -34,3 +34,7 @@ para correr: npx sequelize db:seed:all
 
 # Arquivos - receber e enviar
 npm i multer
+
+# criar tabela de photos fk (alunos)
+npx sequelize migration:create --name=photos
+npx sequelize db:migrate

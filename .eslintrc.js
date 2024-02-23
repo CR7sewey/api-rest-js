@@ -26,5 +26,6 @@ module.exports = {
     'class-methods-use-this': 'off',
     'import/first': 'off',
     'no-param-reassig': 'off',
+    camelcase: 'off',
   },
 };
