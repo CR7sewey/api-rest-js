@@ -31,3 +31,6 @@ assim que o user digitar user e senha nos geramos um token para ele mandar o tok
 para criar cenas
 npx sequelize seed:generate --name criar-users
 para correr: npx sequelize db:seed:all
+
+# Arquivos - receber e enviar
+npm i multer
