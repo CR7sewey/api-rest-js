@@ -8,7 +8,7 @@ class AlunoController {
         order: [['id', 'DESC']], // , [Photo, 'id', 'DESC']],
         // include: {
         // model: Photo,
-        // attributes: ['filename'],
+        // attributes: ['url','filename'],
         // },
       });
 
@@ -36,7 +36,7 @@ class AlunoController {
         order: [['id', 'DESC']], // , [Photo, 'id', 'DESC']],
         // include: {
         // model: Photo,
-        // attributes: ['filename'],
+        // attributes: ['url','filename'],
         // },
       });
 

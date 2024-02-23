@@ -1,4 +1,5 @@
 import Sequelize, { Model } from 'sequelize';
+import appConfig from '../config/appConfig';
 
 export default class Aluno extends Model {
   static init(sequelize) {
@@ -21,6 +22,13 @@ export default class Aluno extends Model {
               msg: 'Cmapo nome nao pode ficar vazio.',
             },
           },
+        },
+        url: {
+          type: Sequelize.VIRTUAL,
+          get() {
+            return `${appConfig.url}/${this.getDataValue('filename')}`;
+          },
+
         },
 
       },
