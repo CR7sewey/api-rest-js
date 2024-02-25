@@ -38,3 +38,6 @@ npm i multer
 # criar tabela de photos fk (alunos)
 npx sequelize migration:create --name=photos
 npx sequelize db:migrate
+
+# install helmet and cors
+npm i cors helmet
